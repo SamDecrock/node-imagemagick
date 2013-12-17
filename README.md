@@ -10,7 +10,17 @@ You can install this module using [npm](http://github.com/isaacs/npm):
 
 Requires imagemagick CLI tools to be installed. There are numerous ways to install them. For instance, if you're on OS X you can use [Homebrew](http://mxcl.github.com/homebrew/): `brew install imagemagick`.
 
-## Example
+## Examples
+
+### Use module
+
+```
+var im = require('simple-imagemagick');
+```
+
+### identify(args, callback(err, output))
+
+Custom identification where `args` is an array of arguments. The result is returned as a raw string to `output`.
 
 ```javascript
 im.identify([
@@ -21,36 +31,6 @@ im.identify([
 });
 
 // -> IMG_6572.JPG JPEG 640x480 640x480+0+0 8-bit sRGB 134KB 0.000u 0:00.000
-```
-
-## API
-
-### identify(path, callback(err, features))
-
-Identify file at `path` and return an object `features`.
-
-Example:
-
-```javascript
-im.identify('kittens.jpg', function(err, features){
-  if (err) throw err;
-  console.log(features);
-  // { format: 'JPEG', width: 3904, height: 2622, depth: 8 }
-});
-```
-
-### identify(args, callback(err, output))
-
-Custom identification where `args` is an array of arguments. The result is returned as a raw string to `output`.
-
-Example:
-
-```javascript
-im.identify(['-format', '%wx%h', 'kittens.jpg'], function(err, output){
-  if (err) throw err;
-  console.log('dimension: '+output);
-  // dimension: 3904x2622
-});
 ```
 
 ### convert(args, callback(err, stdout, stderr))
