@@ -1,6 +1,6 @@
 {
-  "name": "simpleimagemagick",
-  "description": "A wrapper around the imagemagick cli",
+  "name": "simple-imagemagick",
+  "description": "A very simple wrapper around the imagemagick cli",
   "version": "0.1.4",
    "author": {
     "name": "Sam Decrock",
