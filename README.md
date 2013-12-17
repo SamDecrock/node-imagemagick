@@ -1,4 +1,4 @@
-# node-imagemagick
+# simple-imagemagick
 
 Very simple [Imagemagick](http://www.imagemagick.org/) module for [Node](http://nodejs.org/).
 

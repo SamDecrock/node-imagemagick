@@ -1,7 +1,7 @@
 {
   "name": "simple-imagemagick",
   "description": "A very simple wrapper around the imagemagick cli",
-  "version": "0.2.1",
+  "version": "0.2.2",
    "author": {
     "name": "Sam Decrock",
     "url": "https://github.com/SamDecrock/"
